@@ -1,0 +1,2006 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--margin:15px;
+}
+
+/* .resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+} */
+ 
+/* #sessionCardButtonsDiv {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 10rem;
+  border-radius: 0.5rem;
+  margin-top: 280px;
+  
+} */
+ 
+.card-body {
+  min-width: 80%;
+  max-height: 15vh;
+}
+ 
+/* .sessionButtonTimer {
+  
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  
+  color: #444;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+} */
+ 
+/* .sessionButtonTimer:hover {
+  transform: scale(1.03);
+}
+  */
+/* .sessionButtonSetting {
+  
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  
+  color: #444;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+} */
+ 
+/* #endSessionButton {
+  
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  
+  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+  background: rgb(34, 34, 34);
+} */
+ 
+/* #endSessionButton:hover {
+transform: scale(1.03);
+background: rgb(234, 113, 113);
+color: white
+} */
+ 
+/* .sessionButtonSetting:hover {
+  transform: scale(1.03);
+} */
+ 
+/* .sessionButtonShortBreak {
+  
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  
+  color: #444;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+} */
+ 
+/* .sessionButtonShortBreak:hover {
+  transform: scale(1.03);
+} */
+ 
+/* .sessionButtonLongBreak {
+  
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  
+  color: #444;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+} */
+ 
+/* .sessionButtonLongBreak:hover {
+  transform: scale(1.03);
+}
+  */
+.sessionButtons,
+#startSessionBtn,
+#startShortBreakSessionBtn,
+#startLongBreakSessionBtn,
+#endSessionBtn {
+  cursor: pointer;
+}
+ 
+#startingTimerValueButton {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  color: #444;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+ 
+#startingTimerValueButton:hover,
+#cancelTimerValueButton:hover {
+  transform: scale(1.03);
+}
+ 
+#cancelTimerValueButton {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  color: #444;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+ 
+#cancelBtn:hover,
+#confirmBtn:hover {
+  transform: scale(1.03);
+}
+ 
+/* Start button  */
+ 
+#startButtonDiv,
+#startButtonShort,
+#startButtonLong {
+  padding: 3px;
+  max-width: fit-content;
+  margin: 0 auto;
+  display: grid;
+  margin-bottom: 2rem;
+}
+ 
+.timer__btn--start,
+.timer__btn--stop {
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  cursor: pointer;
+  
+  background-color: white;
+}
+ 
+.timer__btn--break {
+  
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0 10px;
+  
+  border: none;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+  
+  width: 80px;
+  
+  
+  text-align: center;
+}
+ 
+#startSessionBtn,
+#stopSessionBtn {
+  margin-inline: auto;
+  display:flex;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0 10px;
+  
+  border: none;
+  color: #444;
+  border-radius: 10rem;
+  
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+  
+  width: 80px;
+  
+  
+  text-align: center;
+  justify-content: center;
+}
+ 
+#stopSessionBtn:hover,
+#startSessionBtn:hover {
+  transform: scale(1.03);
+}
+
+.controlsDivTimer {
+  position: absolute;
+  display:flex;
+  margin-inline: auto;
+  bottom: 1rem;
+  
+  
+}
+
+/* .controlsDivSkip {
+  position: absolute;
+  
+  margin-inline: auto;
+  bottom: 0;
+  border: 2px solid red;
+  right: 0;
+} */
+
+
+ 
+/* .goToBreak {
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+  margin-top: 8rem;
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  right: 42%;
+  text-align: center;
+  margin-top: -5rem;
+} */
+ 
+.timer__btn--session {
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+  /* margin-top: 8rem; */
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  right: 42%;
+  text-align: center;
+  margin-top: -5rem;
+  
+}
+ 
+#favDialog {
+  position: relative;
+  border-radius: 1rem;
+  border: none;
+  /* background: rgb(148, 160, 209); */
+  background: "#2980b9";
+  color: var(--clr-neutral-100);
+  font-size: 1rem;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-top: 15rem;
+  height: 8.2rem;
+  width: 15rem;
+}
+ 
+#favDialog label {
+  position: absolute;
+  left: 40px;
+}
+ 
+#favDialog select {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 10px;
+  border: none;
+  color: #444;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  /* transition: all 300ms ease-in-out; */
+}
+ 
+#cancelBtn,
+#confirmBtn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  /* background-color: rgba(255, 255, 255, 0); */
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+  margin-top: 85px;
+  margin-left: 15px;
+}
+ 
+#cancelBtn:hover,
+#confirmBtn:hover {
+  transform: scale(1.03);
+}
+ 
+#timerDiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  background-color: rgba(255, 255, 255, 0);
+  max-width: 30%;
+  padding: 50px 50px 100px 50px;
+  height: 150px;
+  max-height: fit-content;
+  font-size: 4rem;
+  color: black;
+}
+ 
+#shortBreakDiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  background-color: rgba(255, 255, 255, 0);
+  max-width: 30%;
+  padding: 50px 50px 100px 50px;
+  height: 150px;
+  max-height: fit-content;
+  font-size: 4rem;
+  color: black;
+  
+}
+ 
+#longBreakDiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  background-color: rgba(255, 255, 255, 0);
+  max-width: 30%;
+  padding: 50px 50px 100px 50px;
+  height: 150px;
+  max-height: fit-content;
+  font-size: 4rem;
+  color: black;
+}
+ 
+/* #sessionCardBody {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
+  width: 50%;
+  padding: 1rem;
+} */
+ 
+/* optional color : linear-gradient(to top left, #28b487, #7dd56f) */
+ 
+/* #sessionMain {
+  position: relative;
+  height: 80%;
+  color: (var) --clr-neutral-200;
+} */
+ 
+/* Classes to make popups work HIDDEN */
+ 
+.hidden {
+  display: none;
+}
+ 
+.sessionPopUpModals {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+ 
+.sessionOverlayDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(165, 178, 233); */
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+ 
+.closeSessionModals {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+ 
+/* Tasks div */
+ 
+.taskContainer {
+  position: absolute;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  /* width: 100%; */
+  padding: 0px;
+  left: 50%;
+  right: 50%;
+  transform: translate (-50%, -50%);
+}
+ 
+#taskButtons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 0.5px solid rgba(113, 113, 113, 0.62); */
+  padding: 1.3rem 0.2rem;
+  border-radius: 2rem;
+  height: 2rem;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: #2980b9;
+  left: 0;
+  
+  
+ 
+  
+}
+ 
+#tasksHeader {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+ 
+/* #clearTasksBtn,
+#addTaskBtn {
+  
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  
+  color: rgb(30, 30, 30);
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+} */
+ 
+/* #clearTasksBtn:hover,
+#addTaskBtn:hover {
+  transform: scale(1.03);
+} */
+ 
+/* TASK CARDS*/
+ 
+/* ol {
+  display: flex;
+  flex-wrap: wrap;
+  
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  block-size: fit-content;
+} */
+ 
+
+ 
+/* OVA */
+ 
+.listOfTasksDiv li {
+  /* margin-top: 20px; */
+  max-width: 13vh;
+  list-style-type: none;
+  padding: 15px;
+  text-align: left;
+  min-height: 87%;
+  border-radius: 1rem;
+  color: black;
+  min-width: 18%;
+  font-size: 0.8rem;
+  display: inline;
+}
+ 
+.orderedListOfTasks {
+  position: absolute;
+  display: flex;
+  width: 80%;
+  height: calc(40vh);
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 48%;
+  bottom: 0;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  -webkit-transform: translate(-50%,0);
+  
+}
+ 
+#saveTaskButton:hover,
+#cancelTaskButton:hover {
+  transform: scale(1.03);
+}
+ 
+#noteForTaskBtn {
+  margin: 30px 8px;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  width: 16vh;
+  font-size: 1rem;
+  font-weight: 700;
+  color: gray;
+  height: 1.5rem;
+  /* left: 50%;
+    transform: translateX(-50%); */
+  justify-content: center;
+}
+ 
+#noteForTaskBtn:hover {
+  transform: scale(1.03);
+}
+ 
+#taskText {
+  display: none;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0.5rem;
+  max-width: 50vh;
+  max-height: 20vh;
+  padding: 20px;
+}
+ 
+.liOfTasks {
+  max-width: 100%;
+  height: fit-content;
+  margin: 10px auto;
+  padding: 0 auto;
+  background-color: white;
+  display: inline-block;
+  height: fit-content;
+  position: relative;
+}
+ 
+.showNoteDiv {
+  position: absolute;
+  font-size: 0.9em;
+  font-weight: 300;
+  background: #2980b9;
+  border-radius: 1rem;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  min-height: 86%;
+  top: 36px;
+  z-index: 2;
+  word-wrap: break-word;
+  color: white;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  bottom: 0;
+  
+  
+}
+ 
+.showNoteButton {
+  position: absolute;
+  /* box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  width: 12vh;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgb(80, 80, 80);
+  height: 1.5rem;
+  /* left: 50%;
+        transform: translateX(-50%); */
+  justify-content: center;
+  top: 87%;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+ 
+.showNoteButton:hover {
+  transform: scale(1.03);
+}
+ 
+.hideNoteButton {
+  position: absolute;
+  /* box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  width: 12vh;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgb(80, 80, 80);
+  height: 1.5rem;
+  /* left: 50%;
+        transform: translateX(-50%); */
+  justify-content: center;
+  top: 85%;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+ 
+.hideNoteButton:hover {
+  transform: scale(1.03);
+}
+ 
+.removeTaskButton {
+  position: absolute;
+  top: 0.3vh;
+  right: 0.3vh;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+ 
+.removeTaskButton:hover {
+  transform: scale(1.1);
+}
+ 
+/* TASK FORM */
+ 
+.taskFormDiv {
+  position: relative;
+  top: -200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 50%; */
+  background: #2980b9;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+  height: 70%;
+  /* border: 2px solid grey; */
+  width: fit-content;
+  block-size: fit-content;
+  color: rgb(51, 51, 51);
+}
+ 
+.taskFormDiv h3 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+ 
+.form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+ 
+.txt_field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+ 
+.txt_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 30px;
+  font-size: 14px;
+  border: none;
+  background: none;
+  color: rgb(203, 203, 203);
+  outline: none;
+}
+ 
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+ 
+.txt_field span::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: 0.5s;
+}
+ 
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+  top: -5px;
+  color: white;
+}
+ 
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
+  width: 100%;
+}
+ 
+.timer_field {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 30px 0;
+}
+ 
+.timer_field input {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  color: #444;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  /* transition: all 300ms ease-in-out; */
+  width: 70px;
+}
+ 
+.timer_field label {
+  position: absolute;
+  top: -120%;
+  left: 5px;
+  color: #adadad;
+  font-size: 16px;
+  pointer-events: none;
+}
+ 
+.selection_field {
+  position: relative;
+  margin: 30px 0;
+}
+ 
+.selection_field select {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  color: #444;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  /* transition: all 300ms ease-in-out; */
+}
+ 
+.selection_field label {
+  position: absolute;
+  top: -100%;
+  left: 5px;
+  color: #adadad;
+  font-size: 16px;
+  pointer-events: none;
+}
+ 
+.timer_field input::-webkit-outer-spin-button,
+.timer_field input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+.timer_field input[type="number"] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+ 
+.upAndDown {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  color: #444;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+ 
+.upAndDown:hover {
+  transform: scale(1.03);
+}
+ 
+.timer_break_field {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+ 
+.timer_break_field label {
+  position: absolute;
+  top: -80%;
+  left: 5px;
+  color: #adadad;
+  font-size: 16px;
+  pointer-events: none;
+}
+ 
+.timer_break_field input {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  color: #444;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+  height: 20px;
+}
+ 
+.timer_break_field input::-webkit-outer-spin-button,
+.timer_break_field input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+.timer_break_field input[type="number"] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+ 
+.button_field_2 {
+  position: absolute;
+  padding-top: 15px;
+  margin-right: 3rem;
+}
+ 
+.button_field_3 {
+  position: absolute;
+  padding-top: 15px;
+  margin-left: 8rem;
+}
+ 
+#saveTaskButton,
+#cancelTaskButton {
+  /* margin: 15px 20px; */
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 10px;
+  margin: 0 5px;
+  border: none;
+  /* background-color: rgba(255, 255, 255, 0); */
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 300ms ease-in-out;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+ 
+.button_field {
+  position: relative;
+  margin-top: 50px;
+  padding-bottom: 15px;
+}
+ 
+.settingsDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 50%; */
+  background: #2980b9;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  z-index: 10;
+  width: 20rem;
+  height: 10rem;
+}
+ 
+#startingShortBreakValueInput,
+#startingLongBreakValueInput {
+  font-size: 24px;
+  width: 10%;
+  padding: 0.3rem;
+}
+ 
+.card_timer_container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(237, 236, 236, 0.977);
+}
+ 
+.startTask {
+  /* box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  width: 12vh;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgb(80, 80, 80);
+  height: 1.5rem;
+  justify-content: center;
+  bottom: 100px;
+  
+}
+ 
+.startTask:hover {
+  transform: scale(1.03);
+}
+
+.stopTask, #resumeBtn {
+
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  width: 12vh;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgb(80, 80, 80);
+  height: 1.5rem;
+  /* left: 50%;
+        transform: translateX(-50%); */
+  justify-content: center;
+  top: 80%;
+  left: 33px;
+  right: 20px;
+}
+ 
+.stopTask:hover {
+  transform: scale(1.03);
+}
+.active {
+  transform: scale(1.05);
+  transition: all 300ms ease-in-out;
+}
+
+
+/* ===============MORNING AFTERNOON & EVENING ANIMATIONS=============== */
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+
+.wrapper, .wrapper-session {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(189, 215, 224);
+}
+
+/* MORNING ANIMATION */
+
+
+.tent img {
+  position: absolute;
+  width: 5%;
+  height: 0%;
+  left: 76%;
+  top: 36%;
+}
+
+.tent-active img {
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  left: 76%;
+  top: 36%;
+  z-index: 99;
+  animation: tent 1s linear;
+}
+
+.tent-back img {
+  position: absolute;
+  height: 0%;
+  left: 76%;
+  top: 36%;
+  z-index: 99;
+  opacity: 0;
+  animation: tent-back 0.7s linear;
+}
+
+@keyframes tent-back {
+  0% { height: 5%; opacity: 1}
+  100% { height: 0%; opacity: 0}
+}
+
+@keyframes tent {
+  0% { height: 0%;}
+  100% { height: 5%;}
+}
+
+.explorer img {
+  position: absolute;
+  left: 31%;
+  top: 52%;
+}
+
+.explorer-active img {
+  position: absolute;
+  height: 15%;
+  left: 31%;
+  top: 56%;
+  z-index: 99;
+  opacity: 1;
+  animation: explorer 3s linear;
+}
+
+.explorer-back img {
+  position: absolute;
+  height: 15%;
+  left: 31%;
+  top: 77%;
+  z-index: 99;
+  opacity:0;
+  animation: explorer-back 1.5s linear;
+}
+
+@keyframes explorer-back {
+  0% { top: 56%; opacity: 1;}
+  100% { top: 77%; opacity: 0;}
+}
+
+@keyframes explorer {
+  0% { top: 77%; opacity: 0;}
+  100% { top: 56%; opacity: 1;}
+}
+
+.explorer-on-hill img {
+  position: absolute;
+  left: 77%;
+  top: 33%;
+  height: 7%;
+  
+}
+
+.explorer-on-hill-active img {
+  position: absolute;
+  left: 77%;
+  top: 33%;
+  height: 7%;
+  z-index: 99;
+  opacity: 1;
+  margin-top: 0;
+  animation: explorer-on-hill-active 4s linear
+}
+
+@keyframes explorer-on-hill-active {
+  0% { left: 80%; opacity: 0;}
+  100% { left: 77%; opacity: 1;}
+}
+
+.explorer-on-hill-back img {
+  position: absolute;
+  left: 77%;
+  top: 33%;
+  height: 7%;
+  z-index: 99;
+  opacity:0;
+  margin-top: 0;
+  animation: explorer-on-hill-back 1.5s linear;
+}
+
+@keyframes explorer-on-hill-back {
+  0% { left: 77%; opacity: 1; margin-top: 0}
+  100% { left: 79%; opacity: 0; margin-top: 55px}
+}
+
+.birdOne,
+.birdTwoWingsTwo,
+.birdTwoWingsOne {
+  position: absolute;
+}
+
+.birdOne {
+  opacity: 1;
+  top: 50px;
+  left: -2rem;
+  width: 20px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotateZ(-75deg);
+  z-index: 70;
+}
+
+.birdTwoWingsOne {
+  z-index: 70;
+  left: -2rem;
+  opacity: 1;
+  top: 50px;
+  width: 20px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: rotateZ(75deg);
+  margin: 0px 14px;
+  
+}
+
+.birdTwoWingsTwo {
+  z-index: 70;
+  opacity: 1;
+  top: 45px;
+  left: -2rem;
+  width: 20px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: rotateZ(90deg);
+  margin: 0px 14px;
+  
+}
+
+.birdFly {
+  opacity: 1;
+  top: 50px;
+  left: -2rem;
+  width: 20px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotateZ(-75deg);
+  animation: move 25s linear infinite, flap .5s linear alternate infinite;
+  z-index: 70;
+}
+
+.birdrFly {
+  z-index: 70;
+  left: -2rem;
+  opacity: 1;
+  top: 50px;
+  width: 20px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: rotateZ(75deg);
+  margin: 0px 14px;
+  animation: mover 25s linear infinite, flap .5s linear alternate infinite;
+}
+
+.birdr1Fly {
+  z-index: 70;
+  opacity: 1;
+  top: 45px;
+  left: -2rem;
+  width: 20px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: rotateZ(90deg);
+  margin: 0px 14px;
+  animation: mover 25s linear infinite 1.5s, flap .5s linear alternate infinite 1.5s;
+}
+
+@keyframes move {
+  0% {left: 0px;}
+  100% {left: 100%;}
+}
+
+@keyframes mover {
+  0% {left: -0px;}
+  100% {left: 100%;}
+}
+
+@keyframes flap {
+  0% {border-radius: 90%;}
+  100% {border-radius: 10%;
+  }
+}
+
+.morning {
+  position: absolute;
+  width: 10%;
+  top: 100%;
+  left: 20%;
+} 
+
+.sunRise {
+  position: absolute;
+  width: 10%;
+  left: 43%;
+  top: 18%;
+  animation: sunrise 5s;
+}
+
+@keyframes sunrise {
+  0% {top: 90%; left: 0%}
+  100%{top: 18%; left:43%}
+} 
+
+@keyframes day {
+  0%{background: rgb(7, 51, 73)}
+  100%{background: rgb(137, 166, 176)}
+}
+
+.skySunRise {
+  background: rgb(137, 166, 176);
+  animation: day 5s;
+} 
+
+
+/* EVENING ANIMATION */
+
+/* .moon {
+  position: absolute;
+  width: 10%;
+  left: 27%;
+  top: 100%; 
+}
+
+.bats {
+  position: absolute;
+  width: 10%;
+  right: 27%;
+  top: 100%;
+}
+
+.moonRise {
+  position: absolute;
+  width: 10%;
+  left: 40%;
+  top: 1%; 
+  animation: moon 5s;
+}
+
+.batsRise {
+  position: absolute;
+  width: 10%;
+  right: 50%;
+  top: 1%;
+  animation: bats 5s;
+}
+
+@keyframes bats {
+  0% {top: 70%; right: 27%; width: 1%;}
+  100%{top: 1%; right: 50%; width: 10%}
+}
+
+
+@keyframes night {
+  0%{background: rgb(189, 215, 224)}
+  100%{background: rgb(7, 51, 73)}
+} */
+
+/* @keyframes moon {
+  0% {top: 90%; left: 0%}
+  100%{top: 1%; left:40%}
+  
+} */
+
+/* 66% {top: 10%; left:40%}
+  100%{top: 90%; left: 80%} */
+
+/* AFTERNOON ANIMATION */
+
+.clouds {
+  position: absolute;
+  width: 10%;
+  right: -50rem;
+} 
+
+.clouds3 {
+  position: absolute;
+  width: 8%;
+  left: -50rem;
+} 
+
+.cloudsRise {
+  position: absolute;
+  width: 5%;
+  top: 10%;
+  right: 23%;
+  animation: clouds 5s;
+}
+
+.cloudsRise3 {
+  position: absolute;
+  width: 8%;;
+  top: 10%;
+  left: 25%;
+  animation: clouds3 5s;
+}
+
+@keyframes clouds {
+  0% {top: 0%; right: -50rem; width: 10%;}
+  100%{top: 10%; right: 23%; width: 5%;}
+}
+
+@keyframes clouds3 {
+  0% {top: 10%; left: -50rem; width: 10%;}
+  100%{top: 10%; left: 25%; width: 8%;}
+}
+
+/* ===============FLUENT ANIMATIONS FORWARD AND BACKWARD=============== */
+
+/* ++++++Morning to Afternoon animation++++++ */
+
+.afternoon {
+  position: absolute;
+  width: 10%;
+  top: 100%;
+  left: 50%;
+}
+
+.morningToAfternoon {
+  position: absolute;
+  width: 6%;
+  top: 1%;
+  left: 70%;
+  animation: afternoon 5s;
+  
+} 
+
+@keyframes afternoon {
+  0% {top: 18%; left:43%; width: 10%;}
+  100%{top: 1%; left:70%; width: 6%}
+  
+}
+
+@keyframes afternoonSky {
+  0%{background: rgb(137, 166, 176)}
+  100%{background: rgb(179, 212, 222)}
+}
+
+.afternoonSkyRise {
+  background: rgb(179, 212, 222);
+  animation: afternoonSky 5s;
+} 
+
+/* ++++++Afternoon to Morning animation++++++ */
+
+.afternoonToMorning {
+  position: absolute;
+  width: 10%;
+  left: 43%;
+  top: 18%;
+  animation: afternoonMorningTransition 5s;
+}
+
+@keyframes afternoonMorningTransition {
+  0% {top: 1%; left:70%; width: 6%}
+  100%{top: 18%; left:43%; width: 10%;}
+  
+}
+
+.cloudsBack {
+  position: absolute;
+  width: 5%;
+  top: 0;
+  right: -50rem;
+  animation: cloudsBackAnimation 5s;
+}
+
+.cloudsBack3 {
+  position: absolute;
+  width: 8%;;
+  top: 10%;
+  left: -50rem;
+  animation: cloudsBack3Animation 5s;
+}
+
+
+@keyframes cloudsBackAnimation {
+  0% {top: 10%; right: 23%; width: 5%;}
+  100%{top: 0%; right: -50rem; width: 10%;}
+  
+}
+
+@keyframes cloudsBack3Animation {
+  0% {top: 10%; left: 25%; width: 8%;}
+  100%{top: 10%; left: -50rem; width: 10%;}
+}
+
+@keyframes skyAfternoonToMorning {
+  0%{background: rgb(179, 212, 222)}
+  100%{background: rgb(137, 166, 176)}
+}
+
+.backToMorningSky {
+  background: rgb(137, 166, 176);
+  animation: skyAfternoonToMorning 5s;
+} 
+
+/* ++++++Afternoon to Evening animation++++++ */
+
+.sunAfternoonToEvening {
+  position: absolute;
+  width: 10%;
+  top: 100%;
+  left: 80%;
+  animation: sunset 5s;
+}
+
+@keyframes sunset {
+  0% {top: 1%; left:70% ; width: 6%}
+  100%{top: 70%; left: 90%; width: 6%}
+  
+} 
+
+.skyMoonRise {
+  background: rgb(7, 51, 73);
+  animation: night 5s;
+}
+
+@keyframes night {
+  0%{background: rgb(189, 215, 224)}
+  100%{background: rgb(7, 51, 73)}
+} 
+
+.moon {
+  position: absolute;
+  width: 10%;
+  left: 27%;
+  top: 100%; 
+}
+
+.bats {
+  position: absolute;
+  width: 10%;
+  right: 27%;
+  top: 100%;
+}
+
+.moonRise {
+  position: absolute;
+  width: 10%;
+  left: 40%;
+  top: 1%; 
+  animation: moon 6s ease-in-out;
+}
+
+.batsRise {
+  position: absolute;
+  width: 10%;
+  right: 50%;
+  top: 1%;
+  animation: bats 6s ease-in-out;
+}
+
+@keyframes bats {
+  0% {top: 70%; right: 27%; width: 1%;}
+  100%{top: 1%; right: 50%; width: 10%}
+}
+
+@keyframes moon {
+  0% {top: 90%; left: 0%}
+  100%{top: 1%; left:40%}
+  
+} 
+
+/* ++++++Evening to Afternoon animation++++++ */
+
+.moonBack {
+  position: absolute;
+  width: 10%;
+  left: 40%;
+  top: 100%; 
+  animation: moonBack 4s;
+}
+
+.batsBack {
+  position: absolute;
+  width: 10%;
+  right: 50%;
+  top: 100%;
+  animation: batsBack 4s;
+}
+
+@keyframes batsBack {
+  0% {top: 1%; right: 50%; width: 10%}
+  100%{top: 70%; right: 27%; width: 1%;}
+}
+
+@keyframes moonBack {
+  0% {top: 1%; left:40%}
+  100%{top: 90%; left: 0%}
+} 
+
+.sunAfternoonBack {
+  position: absolute;
+  width: 6%;
+  top: 1%;
+  left: 70%;
+  animation: sunAfterBack 8s;
+}
+
+@keyframes sunAfterBack {
+  0% {top: 70%; left: 90%; width: 6%}
+  100%{top: 1%; left:70% ; width: 6%}
+  
+} 
+
+.skyBackToAfternoon {
+  background: rgb(189, 215, 224);
+  animation: backToAfternoonSun 5s;
+}
+
+@keyframes backToAfternoonSun {
+  0%{background: rgb(7, 51, 73)}
+  100%{background: rgb(189, 215, 224)}
+} 
+
+.cloudsBackToAfternoon {
+  position: absolute;
+  width: 5%;
+  top: 10%;
+  right: 23%;
+  animation: cloudsBackToAfternoonAnimation 8s;
+}
+
+.cloudsBack3ToAfternoon {
+  position: absolute;
+  width: 8%;;
+  top: 10%;
+  left: 25%;
+  animation: cloudsBack3ToAfternoonAnimation 8s;
+}
+
+
+@keyframes cloudsBackToAfternoonAnimation {
+  0% {top: 0%; right: -50rem; width: 10%;}
+  100%{top: 10%; right: 23%; width: 5%;}
+  
+}
+
+@keyframes cloudsBack3ToAfternoonAnimation {
+  0% {top: 10%; left: -50rem; width: 10%;}
+  100%{top: 10%; left: 25%; width: 8%;}
+}
+
+/* ++++++Evening to Morning animation++++++ */
+
+.moonSet {
+  position: absolute;
+  width: 10%;
+  left: 70%;
+  top: 70%; 
+  animation: moonSet 5s;
+}
+
+.batsFlyAway {
+  position: absolute;
+  width: 1%;
+  right: 70%;
+  top: 60%;
+  animation: batsFlyAway 4s;
+}
+
+@keyframes batsFlyAway {
+  0% {top: 1%; right: 50%; width: 10%}
+  100%{top: 60%; right: 70%; width: 6%;}
+}
+
+@keyframes moonSet {
+  0% {top: 1%; left:40%}
+  100%{top: 70%; left: 70%}
+  
+} 
+
+/* ++++++Morning to Evening animation++++++ */
+
+.moonBackToEvening {
+  position: absolute;
+  width: 10%;
+  left: 40%;
+  top: 1%; 
+  animation: moonBackToEveningAnimation 5s;
+}
+
+.batsBackToEvening {
+  position: absolute;
+  width: 10%;
+  right: 50%;
+  top: 1%;
+  animation: batsBackToEveningAnimation 5s;
+}
+
+@keyframes batsBackToEveningAnimation {
+  0% {top: 60%; right: 50rem; width: 1%;}
+  100%{top: 1%; right: 50%; width: 10%;}
+}
+
+@keyframes moonBackToEveningAnimation {
+  0% {top: 70%; left: 80%}
+  100%{top: 1%; left:40%}
+  
+} 
+
+@keyframes skyBackToEveningFromMorningAnimation {
+  0%{background:rgb(137, 166, 176);}
+  100%{background:rgb(7, 51, 73);}
+}
+
+.skyBackToEveningFromMorning {
+  background: rgb(7, 51, 73);
+  animation: skyBackToEveningFromMorningAnimation 5s;
+} 
+
+.sunRiseBack {
+  position: absolute;
+  width: 10%;
+  left: 0%;
+  top: 90%;
+  animation: sunriseBack 5s;
+}
+
+@keyframes sunriseBack {
+  0% {top: 18%; left:43%}
+  100%{top: 90%; left: 0%}
+} 
+
+/*==========Shooting stars==========*/
+
+
+
+.shooting-star {
+  position: absolute;
+  top: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: white;
+  transform: translate(150px, -150px);
+  animation: shooting 20s linear infinite;
+}
+
+
+.shooting-star::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2px;
+  border: 2px solid #F00;
+  border-width: 2px 150px 2px 150px; 
+  border-color: transparent transparent transparent white;
+  transform: rotate(-45deg);
+  transform-origin: 0% 100%;
+}
+
+
+
+.shooting-star-1 {
+  left: 20%;
+  animation-delay: 43s;
+}
+
+.shooting-star-2 {
+  left: 77%;
+  animation-delay: 24s;
+}
+
+.shooting-star-3 {
+  left: 92%;
+  animation-delay: 8s;
+}
+
+
+
+@keyframes shooting {
+  10% {
+    opacity: 0;
+    transform: scale(0) translate(0, 0);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(2) translate(-250px, 250px);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1) translate(-300px, 300px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1) translate(-300px, 300px);
+  }
+}
+
+
+
+
+/* ===============HUMBUGGER BUTTON=============== */
+
+.session-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+  width: 50px;
+  left: 0;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  /* flex-direction: row; */
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  z-index: 150;
+  border-radius: 0.3rem;
+  margin-inline: auto;
+  
+  
+}
+
+.menu > button {
+  margin: 0 1rem;
+  overflow: hidden;
+  
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  
+  
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(119, 28, 28, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 3700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  /* ========================BUTTONS CLOSED======================== */
+
+  #menu-toggle ~ .menu button {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); */
+    font-size: 0;
+  }
+
+  /* ========================BUTTONS OPENED======================== */
+
+  #menu-toggle:checked ~ .menu button {
+    height: 2.9em;
+    padding: 0.5em;
+    /* transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); */
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 90%;
+    color: rgb(30, 30, 30);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 16px;
+    
+    margin-inline: auto;
+  }
+
+  /* ========================BUTTONS WRAPPER CLOSED======================== */
+  
+  #menu-toggle ~ .menu #menu-buttons-wrapper {
+    height: 0;
+    width: 0;
+    background: transparent;
+    /* transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); */
+  }
+
+  /* ========================BUTTONS WRAPPER OPENED======================== */
+  
+  #menu-toggle:checked ~ .menu #menu-buttons-wrapper {
+    background: white;
+    width: 10%;
+    height: 65vh;
+    padding-top: 10px;
+    /* transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); */
+    border-radius: 0.2rem;
+  }
+
+  /* ========================OPTION WINDOWS CLOSED======================== */
+
+  #menu-toggle ~ .menu #menu-window-options {
+    height: 0;
+    width: 0;
+    background: transparent;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  /* ========================OPTION WINDOWS OPENED======================== */
+
+  #menu-toggle:checked ~ .menu #menu-window-options {
+    margin-right: -20rem;
+    width: 89%;
+    height: 65vh;
+    background: white;
+    
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-buttons-wrapper > button {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 11%;
+    color: rgb(30, 30, 30);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 30px 15px;
+    /* -webkit-transition: padding 0.4s linear 0s; */
+    font-size: 16px;
+    
+    
+  }
+
+  #menu-window-options {
+    margin-inline: 11%;
+    margin-top: -65vh;
+    border-radius: 0.2rem;
+    
+  }
+
+  #sessionCardButtonsDiv button:hover {
+    border-left: 5px solid black;
+    border-right: 5px solid white;
+  }
+
+
+  .menu > button:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+
+ 
+}
+
+
+

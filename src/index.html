@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="Statistics/Activity-Summary/ActivitySummary.css" type="text/css" />
+    <link rel="stylesheet" href="Statistics/Focus-Hours/FocusHours.css" type="text/css" />
+    <link rel="stylesheet" href="WorkingSession/workingSessionStyle.css" type="text/css" />
+    <link rel="stylesheet" href="productivity.css" type="text/css" />
+    
+    <title>Productivity Web App</title>
+</head>
+<body>
+   <!--MAIN-->
+        <div class = "L-tewelve"> 
+            <div class = "row">
+            <header class = "header">
+                <div class = "logo-container">
+                    <h1>Habito</h1>
+                    <span class = "toggle-btn">&#9776;</span>
+                </div>
+                <ul class = "display-none-mobile">
+                    <li><a href = "#" data-slide="0">Calendar</a></li>
+                    <li><a href = "#" data-slide="1">Statistics</a></li>
+                    <li><a href = "#" data-slide="2">Home</a></li>
+                    <li><a href = "#" data-slide="3">Productivity</a></li>
+                    <li><a href = "#" data-slide="4">Reminders</a></li>
+                </ul>
+            </header>
+            
+        <div class="wrapper">
+            
+                <div class="animation">
+                    <svg id="completion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 101">
+                        <style>
+                          .st0{fill:#f9f9f9;fill-opacity:0.4;} .st1{fill:#000000;fill-opacity:0.1;} .st2{fill:#ffffff;}
+                        </style>
+                        
+                        <g id="configurator">
+                          <g id="configurator_completion">
+                            <g id="stars">
+                              <circle id="Oval" class="st0" cx="14" cy="18" r="1"/>
+                              <circle id="Oval-Copy-4" class="st0" cx="27" cy="20" r="1"/>
+                              <circle id="Oval-Copy-10" class="st0" cx="76" cy="20" r="1"/>
+                              <circle id="Oval-Copy-2" class="st0" cx="61.5" cy="12.5" r="1.5"/>
+                              <circle id="Oval-Copy-9" class="st0" cx="94" cy="53" r="1"/>
+                              <circle id="Oval-Copy-6" class="st0" cx="88" cy="14" r="1"/>
+                              <circle id="Oval-Copy-7" class="st0" cx="59" cy="1" r="1"/>
+                              <circle id="Oval_1_" class="st0" cx="43" cy="9" r="2"/>
+                              <path id="ster-01" class="st0" d="M28.5 3.8L26 6l2.2-2.5L26 1l2.5 2.2L31 1l-2.2 2.5L31 6z"/>
+                              <path id="ster-01" class="st0" d="M3.5 50.9l-2.1 2.4 1.7-2.7-2.9-1.2 3.1.8.2-3.2.2 3.2 3.1-.8-2.9 1.2 1.7 2.7z"/>
+                              <path id="ster-01" class="st0" d="M93.5 27.8L91 30l2.2-2.5L91 25l2.5 2.2L96 25l-2.2 2.5L96 30z"/>
+                              <circle id="Oval-Copy-5" class="st0" cx="91" cy="40" r="2"/>
+                              <circle id="Oval-Copy-3" class="st0" cx="7" cy="36" r="2"/>
+                              <circle id="Oval-Copy-8" class="st0" cx="7.5" cy="5.5" r=".5"/>
+                            </g>
+                          </g>
+                        </g>
+                        <g id="cirkel">
+                          <g id="Mask">
+                            <path id="path-1_1_" class="st1" d="M49 21c22.1 0 40 17.9 40 40s-17.9 40-40 40S9 83.1 9 61s17.9-40 40-40z"/>
+                          </g>
+                        </g>
+                        <path id="check" class="st2" d="M31.3 64.3c-1.2-1.5-3.4-1.9-4.9-.7-1.5 1.2-1.9 3.4-.7 4.9l7.8 10.4c1.3 1.7 3.8 1.9 5.3.4L71.1 47c1.4-1.4 1.4-3.6 0-5s-3.6-1.4-5 0L36.7 71.5l-5.4-7.2z"/>
+                      </svg>
+                </div>
+                <!-- <div class='icon-scroll'></div> -->
+                <div class="arrow bounce"></div>
+                <div class="swiper section  z-bigger-2" id="swiper">
+                <!-- Additional wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide main-slides1">
+                    
+                    <div class="card-content">
+                        <!-- <h2 class="card-title">CALENDAR</h2> -->
+                        <div class="card-body">
+                            <div class="dateInfo">
+                                <div class="calendarYear">
+                                    <button class="callendarButton" id="prevYearBtn">←</button> Year: <span id="year"></span>
+                                    <button class="callendarButton" id="nextYearBtn">→</button>
+                                </div>
+                                <div class="calendarMonth">
+                                    <button class="callendarButton" id="prevMonthbtn">←</button> Month: <span id="monthName"></span>
+                                    <button class="callendarButton" id="nextMonthbtn">→</button>
+                                </div>
+                                <div id="calendarOuterWrapper">
+                                    <div id="calendarMain"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="swiper-slide main-slides2">
+                    
+                    <div class="card-content" id="card-content-statistics">
+                        <!-- <h2 class="card-title">STATISTICS</h2> -->
+                        <div class="card-body" id="card-body-statistics">
+                            <div id="activitySummaryContainer1">
+                                <h2>Activity Summary</h2>
+                                    <div class="activityCard">
+                                        <div class="acitivityCard_header">
+                                            <i style="font-size:24px" class="fa">&#xf017;</i>
+                                            <p id="dynamicFocusHours"></p>
+                                        </div>
+                                        <p>hours focused</p>
+                                    </div>
+                                    <div class="activityCard">
+                                        <div class="acitivityCard_header">
+                                            <i style="font-size:24px" class="fa">&#xf274;</i>
+                                            <p id="dynamicAccessedDays"></p>
+                                        </div>
+                                        <p>days accessed</p>
+                                    </div>
+                                    <div class="activityCard">
+                                        <div class="acitivityCard_header">
+                                            <i style="font-size:24px" class="fa">&#xf219;</i>
+                                            <p id="dynamicStreakDays"></p>
+                                        </div>
+                                        <p>days streak</p>
+                                    </div>
+                            </div>
+                            <div id="focusHoursContainer">
+                                <!-- <h3>Focus Hours</h3>
+                            <div id="chartContainer">
+                                <canvas id="dynamicChart"></canvas>
+                            </div>   -->
+                                <div class="chartMenu">
+                                </div>
+                                <div class="chartCard">
+                                    <div class="chartBox">
+                                        <canvas id="myChart"></canvas>
+                                        <input onchange="filterDate()" type="date" id="startDate">
+                                        <input onchange="filterDate()" type="date" id="endDate">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="swiper-slide">
+                    
+                    <div class="card-content" id="sessionMain">
+                        <div class="wrapper-session  main-slides3">
+                            
+                            <div class="birdTwoWingsTwo"></div>
+                            <div class="birdOne"></div>
+                            <div class="birdTwoWingsOne"></div>
+
+                            <div class="explorer">
+                                <img src="/vectors/explorer.png">
+                            </div>
+                            <div class="explorer-on-hill">
+                                <img src="/vectors/explorer-on-hill.png">
+                            </div>
+                           <div class="tent"> 
+                                <img src="/vectors/tent.png">
+                            </div>
+                            
+                            <!-- IMAGES -->
+                            
+                            <img src="vectors/sun-sun-vector-nature-sky-outdoors-balloon-transparent-png-271017.png" class="morning">
+                            <img src="vectors/sun-icon-vector-dog-poop-moon-outer-space-night-astronomy-transparent-png-1254386 .png" class="moon">
+                            <img src="vectors/sun-sun-vector-nature-sky-outdoors-balloon-transparent-png-271017.png" class="afternoon">
+                            
+                            <img src="vectors/cloud (1).png" class="clouds3">
+                            <img src="vectors/cloud.png" class="clouds">
+                            <img src="vectors/bats.png" class="bats">
+                            <img src="vectors/oie_transparent.png" class="background">
+                        </div>
+                        <div class="nested-swiper gallery-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"></div>
+                                <div class="swiper-slide"></div>
+                                <div class="swiper-slide"></div>
+                            </div>
+                        
+                        <div class="swiper-container gallery-thumbs">
+                            <div class="swiper-wrapper">
+                                
+                                <div class="swiper-slide"><h3>Morning</h3></div>
+                                <div class="swiper-slide"><h3>Afternoon</h3></div>
+                                <div class="swiper-slide"><h3>Evening</h3></div>
+                                
+                            </div>
+                        </div>
+
+                            <!-- <div class="nav-container">
+                                <div id="navbar" class="swiper-pagination"></div>
+                            </div> -->
+                            
+                        </div>
+                        <div class="listOfTasksDiv">
+                            <ol class="orderedListOfTasks">
+                            </ol>
+                        </div>
+                        <div class="card-body" id="sessionCardBody">
+                            <section class="session-nav">
+                                <input id="menu-toggle" type="checkbox" />
+                                <label class='menu-button-container' for="menu-toggle">
+                                <div class='menu-button'></div>
+                              </label>
+                                <div class="menu" id="sessionCardButtonsDiv">
+                                    <div id="menu-buttons-wrapper">
+                                        <button class="sessionButtonSetting" id="sessionSettings">Settings</button>
+                                        <button class="sessionButtonTimer" id="timer">Session</button>
+                                        <button class="sessionButtonShortBreak" id="shortBreak">Short break</button>
+                                        <button class="sessionButtonLongBreak" id="longBreak">Long break</button>
+                                        <button id="addTaskBtn">Add task</button>
+                                        <button id="clearTasksBtn">Clear tasks</button>
+                                        <button id="endSessionButton">End session</button>
+                                    </div>
+                                    <div id="menu-window-options">
+
+                                    </div>
+                                </div>
+                                
+                              </section>
+                            <!-- <div id="sessionCardButtonsDiv" style="display: none;">
+                                <button class="sessionButtonSetting" id="sessionSettings">Settings</button>
+                                <button class="sessionButtonTimer" id="timer">Session</button>
+                                <button class="sessionButtonShortBreak" id="shortBreak">Short break</button>
+                                <button class="sessionButtonLongBreak" id="longBreak">Long break</button>
+                                <button id="addTaskBtn">Add task</button>
+                                <button id="clearTasksBtn">Clear tasks</button>
+                                <button id="endSessionButton">End session</button>
+                            </div> -->
+                            <div class="sessionPopUpModals hidden">
+                                <button class="closeSessionModal">&times;</button>
+                                <h1>SessionPopUpModals</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum modi illum, velit rem iusto ut! Suscipit doloribus ea deleniti?</p>
+                            </div>
+                            <div class="settingsDiv hidden">
+                                <div class="timer_break_field">
+                                    <input id="startingShortBreakValueInput" placeholder="00" type="number" min="1" max="120" step="1" value="0">
+                                    <button id="arrowUpShortBreak" class="upAndDown">▲</button>
+                                    <button id="arrowDownShortBreak" class="upAndDown">▼</button>
+                                    <label for="starting shortBreak">Insert short break duration (minutes):<label>
+                                        
+                                </div>
+                                <div class="timer_break_field">
+                                    <input  id="startingLongBreakValueInput" placeholder="00" type="number" min="1" max="60" step="1" value="0">
+                                    <button id="arrowUpLongBreak" class="upAndDown">▲</button>
+                                    <button id="arrowDownLongBreak" class="upAndDown">▼</button>
+                                    <label for="starting longBreak">Insert long break duration (minutes):<label>
+                                </div>
+                                <div class="button_field_2">
+                                    <button id="cancelTimerValueButton">Cancel</button>
+                                    
+                                </div>
+                                <div class="button_field_3">
+                                    
+                                    <button class="values" id="startingTimerValueButton">Confirm</button>
+                                </div>
+
+                            </div>
+                            <div class="sessionOverlayDiv hidden"></div>
+                                <div class="hidden" id="timerDiv" style="display:none">00:00</div>
+                                <div class="hidden" id="shortBreakDiv" style="display:none">00:00</div>
+                                <div class="hidden" id="longBreakDiv" style="display:none">00:00</div>
+                            <div id="openSessionDiv"></div>
+                            
+                            <div id="taskButtons" style="display: none;">
+                                
+                                <!-- HERE WERE THE TASK BUTTONS -->
+                                
+                            </div>
+                            
+                            <div class="taskContainer">
+                                <div class="taskFormDiv hidden"> 
+                                    <h3 >Add task</h3>
+                                    <div class="form"> 
+                                        <div class="txt_field">
+                                            <input id="inputForTaskTitle" maxlength="20" type="text" required>
+                                            <span></span>
+                                            <label>Title</label>
+                                </div>
+                                <div class="timer_field">
+                                    <label>Task time duration (minutes):</label>
+                                    <input id="inputForTimeOfTask" type="number" min="0" step="1" value="1">
+                                    <button id="arrowUp" class="upAndDown">▲</button>
+                                    <button id="arrowDown" class="upAndDown">▼</button>
+                                    <label>Task time duration (minutes):</label>
+                                </div>
+                                <div class="selection_field">
+                                    <select id="priority" required>
+                                            <option value="">---Nothing Selected---</option>
+                                            <option value="High">High</option>
+                                            <option value="Medium">Medium</option>
+                                            <option value="Low">Low</option>
+                                            </select>
+                                    
+                                    <label for="priority">Priority:</label>
+                                </div>
+                                <div class="selection_field">
+                                    <select id="pace" required>
+                                            <option value="">---Nothing Selected---</option>
+                                            <option value="High">High</option>
+                                            <option value="Medium">Medium</option>
+                                            <option value="Low">Low</option>
+                                            </select>
+                                    
+                                    <label for="Pace">Pace:</label>
+                                </div>
+                                <button id="noteForTaskBtn">+ Add note</button>
+                                <textarea maxlength="300" name="Task description" id="taskText" cols="30" rows="3" placeholder="Text description here please"></textarea>
+                                <div class="button_field">
+                                    <button id="cancelTaskButton">Cancel</button>
+                                    <button class="values" id="saveTaskButton">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="swiper-slide main-slides4" id="main-slides4">
+           
+            <div class="card-content">
+                <!-- <h2 class="card-title">HOW TO BE PRODUCTIVE</h2> -->
+                <div class="card-body" id="productivity-card">
+
+                    <!-- Search box -->
+                    <div class="container-search-box" id="left1">
+                        <input type="text" id="box" placeholder="Search" class="search__box">
+                        <i class="material-icons search__icon" id="icon" onclick="toggleShow()">search</i>
+                    </div>
+                    <!-- Swiper search menu -->
+                    <div class="swiper-search-menu gallery-search">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><h3>All</h3></div>
+                            <div class="swiper-slide"><h3>Productivity</h3></div>
+                            <div class="swiper-slide"><h3>Water</h3></div>
+                            <div class="swiper-slide"><h3>Exercise</h3></div>
+                            <div class="swiper-slide"><h3>Meditation</h3></div>
+                            <div class="swiper-slide"><h3>Eat healthy</h3></div>
+                        </div>
+                    </div>
+
+                    <!-- Swiper Popular articles -->
+                    <h5 class="h5">Popular</h5>
+                    <div class="swiper-popular-articles gallery-articles">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="png-wrapper">
+                                    <img src="/vectorsProductivity/exercise.png" class="productivityVectors">
+                                </div>
+                                <div class="text-headline">
+                                    <h2>Maintaining healthy habits-in five simple steps</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="png-wrapper">
+                                    <img src="/vectorsProductivity/mind.png" class="productivityVectors">
+                                </div>
+                                <div class="text-headline">
+                                    <h2>7 Brain Exercises to Strengthen Your Mind</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="png-wrapper">
+                                    <img src="/vectorsProductivity/healthy.png" class="productivityVectors">
+                                </div>
+                                <div class="text-headline">
+                                    <h2>Healthy snacks</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="png-wrapper">
+                                    <img src="/vectorsProductivity/office.png" class="productivityVectors">
+                                </div>
+                                <div class="text-headline">
+                                    <h2>5 must have habits in the office</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="png-wrapper">
+                                    <img src="/vectorsProductivity/outdoorswork.png" class="productivityVectors">
+                                </div>
+                                <div class="text-headline">
+                                    <h2>Working outdoors can boost your productivity</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="png-wrapper">
+                                    <img src="/vectorsProductivity/team-work.png" class="productivityVectors">
+                                </div>
+                                <div class="text-headline">
+                                    <h2>Simple tips for achieving goals</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="png-wrapper">
+                                    <img src="/vectorsProductivity/yoga.png" class="productivityVectors">
+                                </div>
+                                <div class="text-headline">
+                                    <h2>How to build a healthy habits</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Swiper Popular articles -->
+                    <h5 class="h6">New Articles</h5>
+                    <div class="section-new-article">
+                        <div class="container-new-article">
+                          <div class="grid-row">
+                            <div class="grid-item">
+                              <span>
+                                <h2>Five easy steps to achieving your goals</h2>
+                                
+                              </span>
+                              <img src="/vectorsProductivity/new articles/oie_transparent.png">
+                            </div>
+                            <div class="grid-item">
+                              <span>
+                                <h2>Simple tips for achieving goals</h2>
+                                
+                              </span>
+                              <img src="/vectorsProductivity/new articles/oie_transparent (1).png">
+                            </div>
+                            <div class="grid-item">
+                              <span>
+                                <h2>Five techniques for stress relief</h2>
+                                
+                              </span> 
+                              <img src="/vectorsProductivity/new articles/oie_transparent (2).png">
+                            </div>
+                            <div class="grid-item">
+                              <span>
+                                <h2>How to fit meditation into your day</h2>
+                                
+                              </span> 
+                              <img src="/vectorsProductivity/new articles/oie_transparent (3).png">
+                            </div>
+                            <div class="grid-item">
+                              <span>
+                                <h2>Motivation for exercise</h2>
+                                
+                              </span> 
+                              <img src="/vectorsProductivity/new articles/oie_transparent (4).png">
+                            </div>
+                            <div class="grid-item">
+                              <span>
+                                <h2>11 bad eating habits you can break for good</h2>
+                                
+                              </span> 
+                              <img src="/vectorsProductivity/new articles/oie_transparent (5).png">
+                            </div>
+                            <div class="grid-item">
+                                <span>
+                                  <h2>How to exercise when you don't have time</h2>
+                                  
+                                </span> 
+                                <img src="/vectorsProductivity/new articles/oie_transparent (6).png">
+                              </div>
+                              <div class="grid-item">
+                                <span>
+                                  <h2>Stress relievers: Tips to tame stress</h2>
+                                  
+                                </span> 
+                                <img src="/vectorsProductivity/new articles/oie_transparent (7).png">
+                              </div>
+                              <div class="grid-item">
+                                <span>
+                                  <h2>Ten reasons why you should drink plenty of water</h2>
+                                  
+                                </span> 
+                                <img src="/vectorsProductivity/new articles/oie_transparent (8).png">
+                              </div>
+                              <div class="grid-item">
+                                <span>
+                                  <h2>How to Manage Tasks: 12 Powerful and Proven Tips</h2>
+                                  
+                                </span> 
+                                <img src="/vectorsProductivity/new articles/oie_transparent (9).png">
+                              </div>
+                              <div class="grid-item">
+                                <span>
+                                  <h2>Coping with stress at work</h2>
+                                  
+                                </span> 
+                                <img src="/vectorsProductivity/new articles/oie_transparent (10).png">
+                              </div>
+                             </div>
+                        </div>
+                      </div>
+                    <!-- <div class="new-articles">
+                        <div class="wrapper-new-articles">
+                            <div class="png-wrapper-new-articles">
+                                <img src="/vectorsProductivity/new articles/oie_transparent.png" class="productivityVectors">
+                            </div>
+                            <div class="text-headline-new-article">
+                                <h2>Healthy snacks</h2>
+                            </div>
+                        </div>
+                        <div class="wrapper-new-articles">
+                            <div class="png-wrapper-new-articles">
+                                <img src="/vectorsProductivity/new articles/oie_transparent (1).png" class="productivityVectors">
+                            </div>
+                            <div class="text-headline-new-article">
+                                <h2>Healthy snacks</h2>
+                            </div>
+                        </div>
+                        <div class="wrapper-new-articles">
+                            <div class="png-wrapper-new-articles">
+                                <img src="/vectorsProductivity/new articles/oie_transparent (2).png" class="productivityVectors">
+                            </div>
+                            <div class="text-headline-new-article">
+                                <h2>Healthy snacks</h2>
+                            </div>
+                        </div>
+                        <div class="wrapper-new-articles">
+                            <div class="png-wrapper-new-articles">
+                                <img src="/vectorsProductivity/new articles/oie_transparent (3).png" class="productivityVectors">
+                            </div>
+                            <div class="text-headline-new-article">
+                                <h2>Healthy snacks</h2>
+                            </div>
+                        </div>
+                        <div class="wrapper-new-articles">
+                            <div class="png-wrapper-new-articles">
+                                <img src="/vectorsProductivity/new articles/oie_transparent (4).png" class="productivityVectors">
+                            </div>
+                            <div class="text-headline-new-article">
+                                <h2>Healthy snacks</h2>
+                            </div>
+                        </div>
+                        <div class="wrapper-new-articles">
+                            <div class="png-wrapper-new-articles">
+                                <img src="/vectorsProductivity/new articles/oie_transparent (5).png" class="productivityVectors">
+                            </div>
+                            <div class="text-headline-new-article">
+                                <h2>Healthy snacks</h2>
+                            </div>
+                        </div>
+                        <div class="wrapper-new-articles">
+                            <div class="png-wrapper-new-articles">
+                                <img src="/vectorsProductivity/new articles/oie_transparent (6).png" class="productivityVectors">
+                            </div>
+                            <div class="text-headline-new-article">
+                                <h2>Healthy snacks</h2>
+                            </div>
+                        </div>
+                        <div class="wrapper-new-articles">
+                            <div class="png-wrapper-new-articles">
+                                <img src="/vectorsProductivity/new articles/oie_transparent (7).png" class="productivityVectors">
+                            </div>
+                            <div class="text-headline-new-article">
+                                <h2>Healthy snacks</h2>
+                            </div>
+                        </div>
+                        <div class="wrapper-new-articles">
+                            <div class="png-wrapper-new-articles">
+                                <img src="/vectorsProductivity/new articles/oie_transparent (8).png" class="productivityVectors">
+                            </div>
+                            <div class="text-headline-new-article">
+                                <h2>Healthy snacks</h2>
+                            </div>
+                        </div>
+                        <div class="wrapper-new-articles">
+                            <div class="png-wrapper-new-articles">
+                                <img src="/vectorsProductivity/new articles/oie_transparent (9).png" class="productivityVectors">
+                            </div>
+                            <div class="text-headline-new-article">
+                                <h2>Healthy snacks</h2>
+                            </div>
+                        </div>
+                        <div class="wrapper-new-articles">
+                            <div class="png-wrapper-new-articles">
+                                <img src="/vectorsProductivity/new articles/oie_transparent (10).png" class="productivityVectors">
+                            </div>
+                            <div class="text-headline-new-article">
+                                <h2>Healthy snacks</h2>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <div id="productivity" class="productivity-images">
+                        <!-- <img class="Productivity-pics" src="Pics/rule-of-three.png" alt="ruleOfThree"> 
+                        <img class="Productivity-pics" src="Pics/deep work.png" alt="deepWork">
+                        <img class="Productivity-pics" src="Pics/time blocking.png" alt="timeBlocking">
+                        <img class="Productivity-pics" src="Pics/two minute rule.png" alt="twoMinuteRule">
+                        <img class="Productivity-pics" src="Pics/single tasking.png" alt="singTaksing">
+                        <img class="Productivity-pics" src="Pics/pareto principal.png" alt="paretoPrinciple">
+                        <img class="Productivity-pics" src="Pics/eat the frog.png" alt="eisenhowerPrinciple">
+                        <img class="Productivity-pics" src="Pics/task batching.png" alt="taskBatching">
+                        <img class="Productivity-pics" src="Pics/dry principle.png" alt="repeatYourself">
+                        <img class="Productivity-pics" src="Pics/productivity journaling.png" alt="productivityJournaling"> -->
+                    </div>
+                    <div id="informations"></div>
+                        <button class="go-back-button" id="go-back">Go back</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="swiper-slide main-slides5">
+            
+            <!-- <h2 class="card-title" id ="titleFix">REMINDERS</h2> -->
+            <div class="card-body">
+                <!-- <div class="js-clock">
+                    <h1>00:00:00</h1>
+                </div> -->
+                <div class="reminderBtnsDiv">
+                    <button class="reminderBtns" id="reminderBtn">Create New Reminder</button>
+                    <button id="deleteReminder" class="reminderBtns">Clear Reminders</button>
+                </div>
+                <div id="AddReminderPopUpContainer">
+                    <div class="AddReminderPopUp">
+                        <label for="inputForCreatingReminder">Write reminder:</label>
+                        <input class="reminderInput" id="inputForCreatingReminder" type="text" placeholder="Add User Reminder">
+                        <label for="inputForSettingDateForTask">Enter date:</label>
+                        <input class="reminderInput" id="inputForSettingDateForTask" type="date">
+                        <label for="inputForTimeOfReminder">Set time:</label>
+                        <input type="time" class="reminderInput" id="inputForTimeOfReminder" name="inputForTimeOfReminder" min="00:00" max="23:59" required>
+                        <label for="priorityRem">Choose priority:</label>
+                        <select class="reminderInput" name="priorityRem" id="priorityRem">
+                                <option value="High">High</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Low">Low</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="js-clock" id="savedReminders">Saved Reminders:</div>
+                    <div id="remindersContainer">
+                        <div class="remindersTable" id="remindersTableId"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+    <!--Dialog options Long & Short Break-->
+        <dialog id="favDialog">
+            <form method="dialog">
+                <p><label>Skip to?:
+                        <select>
+                            <option value="default">Choose...</option>
+                            <option>Short Break</option>
+                            <option>Long Break</option>
+                            <option>Session</option>
+                        </select>
+                    </label></p>
+                <div class="button_field_4">
+                    <button id="cancelBtn" value="cancel">Cancel</button>
+                    <button id="confirmBtn" value="default">Confirm</button>
+                </div>
+            </form>
+        </dialog>
+    </div>
+</div>
+</div>
+
+  
+
+
+
+
+    <!--END MAIN-->
+<!-- Scroll back to top
+================================================== -->
+
+<div class="scroll-to-top hover-target"></div>
+
+<!-- Page cursor
+================================================== -->
+
+<div class='cursor' id="cursor"></div>
+<div class='cursor2' id="cursor2"></div>
+<div class='cursor3' id="cursor3"></div>
+
+        </div>
+        
+        <!-- Modal -->
+        <!-- <div class="modal open" id="modal-sign-in">
+            <div class="modal-bg modal-exit"></div>
+            <div class="modal-container">
+                <h1>Log in</h1>
+                <div>
+                    <h2>Email</h2>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+                <div>
+                    <h2>Password</h2>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <button class="modal-exit" id="modal-exit">Log in</button>
+                <br />
+                <a class="modal-exit" id="modal-exit">Sign in as a guest</a>
+                <br />
+                <br />
+                <a class="modal-exit" id="sign-up">Sign up</a>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-sign-up">
+            <div class="modal-bg modal-exit"></div>
+            <div class="modal-container">
+                <h1>Sign up</h1>
+                <div>
+                    <h2>Email</h2>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+                <div>
+                    <h2>Password</h2>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <button class="modal-exit" id="modal-exit">Sign up</button>
+            </div>
+        </div> -->
+        <!-- Slider main container -->
+         <!-- Pagination A.K.A. The navigation-bar-->
+    
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery-backward-timer.min.js"></script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="script_calendar.js"></script>
+    <script src="Statistics/Focus-Hours/FocusHours.js"></script>
+    <script src="Statistics/Activity-Summary/ActivitySummary.js"></script>
+    <script src="WorkingSession/working_session.js"></script>
+    <script src="modal.js"></script>
+    <!-- <script src="clock.js"></script> -->
+    <script src="productivity.js"></script>
+
+
+
+</body>
+
+</html>

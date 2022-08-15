@@ -1,0 +1,252 @@
+
+
+/* ============================ SEARCH BOX ============================*/
+
+.container-search-box {
+    width: 350px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+  /*   margin: 20vh auto; */
+    position: fixed; 
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 1rem;
+    padding: 5px;
+    z-index: 99;
+    -webkit-transition: all 0.4s linear 0s;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+  }
+  
+  .search__box {
+    float: left;
+    width: 0;
+    height: 2.3rem;
+  /*   display: inline; */
+    background: none;
+    color: rgb(30, 30, 30);
+    font-size: 1rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    position: relative;
+    opacity: 1;
+    transition: all .75s ease-in;
+    cursor: pointer;
+  /*   border: 2px solid tomato; */
+  /*   margin-top: 5px; */
+  }
+  
+  /* .search__box:focus, .search__box:hover {
+    background-color: #f1f2f6;
+  } */
+  
+  .search__icon {
+    box-sizing: border-box;
+    float: right;
+    font-size: 1.3rem;
+    display: inline-block;
+  /*   justify-content: center;
+    align-items: center; */
+    margin-left: .8rem;
+    margin-top: -.2rem;
+    cursor: pointer;
+    position: absolute;
+    color: rgb(30, 30, 30);
+    transition: all .25s ease-in;
+    padding: .7rem;
+    border-radius: 1rem;
+  }
+  
+  .container-search-box:hover > .search__box {
+    width: 85%;
+    padding: 0 1rem;
+  }
+  
+  .container-search-box:hover > .search__icon {
+    background-color: #eee;
+  }
+  
+  .show {
+    width: 85%;
+  }
+
+  /* #productivity {
+    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    top: 50%;
+    gap: 15px;
+  } */
+
+/* .productivity-images img {
+    
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: 23%;
+    width: 15%;
+    height: 145px;
+} */
+
+  /* ============================ Articles Swiper ============================*/
+
+  .h5 {
+    color: white;
+    padding-left: 12px;
+    margin-top: 1.5rem;
+  }
+
+  .swiper-popular-articles .swiper-slide  {
+    width: 29rem;
+    height: 27rem;
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    display: table;
+    transition: filter 0.5s ease;
+    
+  }
+
+  .swiper-popular-articles .swiper-slide:hover {
+    filter: contrast(0.7);
+  }
+
+  .productivityVectors {
+    width: 95%;
+    height: 95%;
+    
+  }
+
+  .png-wrapper {
+    width: 100%;
+    height: 20rem;
+    background-color: rgb(241, 241, 241);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
+    
+  }
+
+  .text-headline {
+   
+    width: 100%;
+    height: 35%;
+    padding: 10px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    background-color: rgb(2, 34, 50);
+    cursor: pointer;
+  }
+
+  .text-headline h2, .text-headline-new-article h2 {
+    color: white;
+    font-size: 18px;
+    margin-top: -3px;
+  }
+
+  /* ============================ Menu Swiper ============================*/
+
+  .swiper-search-menu .swiper-slide {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    margin-top: 9rem;
+    opacity: 1;
+    background: rgb(237, 237, 237);
+    width: fit-content;
+    font-size: 10px;
+    color: rgb(42, 42, 42);
+    padding: 5px 10px 5px 10px;
+    line-height: 1px;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+
+  .swiper-search-menu .swiper-slide h3 {
+    font-size: 1.2rem;
+  }
+
+  .gallery-search {
+    z-index: -12;
+  }
+
+  /* ============================ Swiper Productivity ==============================*/
+
+  #main-slides4 {
+    overflow-y: auto;
+    
+  }
+
+  /* ============================ New Articles ============================*/
+
+  .h6 {
+    color: white;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .section-new-article {
+    padding: 10px;
+  }
+  .container-new-article {
+    width: 100%;
+    margin: auto;
+  }
+
+  .grid-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 350px));
+    grid-gap: 15px 15px;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .grid-row .grid-item span {
+    padding: 10px;
+    line-height: 1;
+  }
+
+  .grid-row .grid-item h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+  }
+
+  .grid-row .grid-item:hover {
+    filter: contrast(0.7);
+  }
+
+  .grid-row .grid-item {
+    transition: filter 0.5s ease;
+    display: flex;
+    cursor: pointer;
+    background-color: rgb(241, 241, 241);
+    
+    width: 30rem;
+    height: 70vh;
+    text-align: center;
+    font-family: sans-serif;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    border-radius: 1rem;
+    
+  }
+
+  .grid-item span {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: rgb(2, 34, 50);
+    color: white;
+    height: 15vh;
+  }

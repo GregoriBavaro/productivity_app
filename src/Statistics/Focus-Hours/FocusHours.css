@@ -1,0 +1,38 @@
+/* #chartContainer {
+    display: block;
+    height:185px;
+    width:607px;    
+}
+#dynamicChart {
+    height:100%;
+    width:100%;    
+} */
+/* * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+} */
+
+#focusHoursContainer{
+    width: 80%;
+}
+
+.chartCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chartBox {
+    width: 90%;
+    height: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px rgba(69, 68, 173, 1);
+    background: rgb(245, 242, 228);
+    margin-top: 4%;
+}
+
+#dynamicFocusHours {
+    font-size:14px;
+}
